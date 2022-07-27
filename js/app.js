@@ -4,7 +4,7 @@ function randomAnimal(details) {
   function post_success(response) {
     /* print in the page the name and image */
     document.body.insertAdjacentHTML(
-      `afterbegin`,
+      `beforeend`,
       `
         <h1>${response[`data`][`name`]}</h1>
         <img src="${response[`data`][`image_link`]}">
